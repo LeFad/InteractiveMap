@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_name_country"
+        android:layout_width="219dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="96dp"
+        android:textAlignment="center"
+        android:hint="Страна"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_flag_country"
+        android:layout_width="412dp"
+        android:layout_height="185dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_country"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/tv_capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Столица:"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <TextView
+            android:id="@+id/tv_name_capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:hint="Столица"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="320dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        >
+
+    <TextView
+        android:id="@+id/tv_president"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Президент:"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+
+    <TextView
+        android:id="@+id/tv_name_president"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:hint="Президент"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="278dp" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp">
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Валюта:"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="320dp" />
+
+        <TextView
+            android:id="@+id/tv_name_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:hint="Валюта"
+            tools:layout_editor_absoluteX="129dp"
+            tools:layout_editor_absoluteY="320dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="История:"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="365dp"
+        android:layout_marginTop="5dp"
+        android:paddingLeft="10dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/tv_name_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="История"
+            tools:layout_editor_absoluteX="19dp"
+            tools:layout_editor_absoluteY="392dp"
+
+            />
+
+    </ScrollView>
+
+
+</LinearLayout>
