@@ -25,12 +25,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ConstraintLayout constraintLayout;
 
     public ContentValues contentValues = new ContentValues();
-    public String name[]={"Россия","Финляндия"};
-    public String capital[]={"Москва","Хельсинки"};
-    public String president[]={"Владимир Путин","Саули Ниинистё"};
-    public String currency[]={"Российский рубль, ₽","Евро, EUR"};
-    public String history[]={String.valueOf(R.string.history_Rus),String.valueOf(R.string.history_Fin)};
-    public String img[]={String.valueOf(R.drawable.rus_flag), String.valueOf(R.drawable.fin_flag)};
+    public String name[]={"Россия","Финляндия","Швеция","Норвегия","Великобритания","Исландия",
+                            "Ирландия","Португалия","Испания","Андорра","Франция","Эстония",
+                            "Латвия","Литва","Дания"};
+
+    public String capital[]={"Москва","Хельсинки","Стокгольм","Осло","Лондон","Рейкьявик","Дублин",
+                                "Лиссабон","Мадрид","Андорра-ла-Велья","Париж","Таллин","Рига",
+                                "Вильнюс","Копенгаген"};
+
+    public String president[]={"Владимир Путин","Саули Ниинистё", "Король - Карл XVI Густав",
+                                "Король - Харальд V", "Королева - Елизавета II", "Гвюдни Йоуханнессон",
+                                "Майкл Хиггинс", "Марселу Ребелу ди Соза", "Король - Филипп VI",
+                                "Сокнязья - Эмманюэль Макрон, Жоан Энрик Вивес-и-Сисилиа","Эмманюэль Макрон",
+                                "Керсти Кальюлайд","Эгилс Левитс","Гитанас Науседа", "Королева - Маргрете II"};
+
+    public String currency[]={"Российский рубль, ₽","Евро, EUR","Шведская крона, SEK",
+                                "Норвежская крона, NOK","Фунт стерлингов, GBP","Исландская крона, ISK",
+                                "Евро, EUR", "Евро, EUR", "Евро, EUR", "Евро, EUR", "Евро, EUR",
+                                "Евро, EUR","Евро, EUR","Евро, EUR","Датская крона, DKK"};
+
+    public String history[]={String.valueOf(R.string.history_Rus),String.valueOf(R.string.history_Fin),
+                            String.valueOf(R.string.history_Swed), String.valueOf(R.string.history_Norw),
+                            String.valueOf(R.string.history_UK),String.valueOf(R.string.history_Ice),
+                            String.valueOf(R.string.history_Irel),String.valueOf(R.string.history_Port),
+                            String.valueOf(R.string.history_Spain),String.valueOf(R.string.history_Andorra),
+                            String.valueOf(R.string.history_France),String.valueOf(R.string.history_Estonia),
+                            String.valueOf(R.string.history_Latvia),String.valueOf(R.string.history_Litvenia),
+                            String.valueOf(R.string.history_Denmark)};
+    public String img[]={String.valueOf(R.drawable.rus_flag), String.valueOf(R.drawable.fin_flag),
+                        String.valueOf(R.drawable.swed_flag), String.valueOf(R.drawable.norw_flag),
+                        String.valueOf(R.drawable.uk_flag), String.valueOf(R.drawable.ice_flag),
+                        String.valueOf(R.drawable.irel_flag),String.valueOf(R.drawable.port_flag),
+                        String.valueOf(R.drawable.spain_flag),String.valueOf(R.drawable.andora_flag),
+                        String.valueOf(R.drawable.france_flag),String.valueOf(R.drawable.estonia_flag),
+                        String.valueOf(R.drawable.latvia_flag),String.valueOf(R.drawable.litvenia_flag),
+                        String.valueOf(R.drawable.denmark_flag)};
 
     private int idIndex;
     private int nameIndex;
@@ -285,66 +314,114 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
-
-
-
             case R.id.btn_Swed1:
             case R.id.btn_Swed2:
-
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "3";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Norw1:
             case R.id.btn_Norw2:
             case R.id.btn_Norw3:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "4";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_UK:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "5";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Ice:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "6";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Irel:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "7";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Port:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "8";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Spain1:
             case R.id.btn_Spain2:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "9";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Andora:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "10";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_France1:
             case R.id.btn_France2:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "11";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Estonia:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "12";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Latvia:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "13";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Litvenia1:
             case R.id.btn_Litvenia2:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "14";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Denmark:
+                dbHelper = new DBHelper(this);
+                dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
+                str_name = "15";
+                intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Belg:
