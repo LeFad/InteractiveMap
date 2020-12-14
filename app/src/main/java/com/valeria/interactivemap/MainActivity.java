@@ -2,8 +2,6 @@ package com.valeria.interactivemap;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-
-import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
@@ -30,107 +28,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ConstraintLayout constraintLayout;
 
     public ContentValues contentValues = new ContentValues();
-    public String name[]={"Россия","Финляндия","Швеция","Норвегия","Великобритания","Исландия",
-                            "Ирландия","Португалия","Испания","Андорра","Франция","Эстония",
-                            "Латвия","Литва","Дания","Бельгия","Нидерланды","Люксембург","Белоруссия",
-                            "Германия","Польша","Украина","Чехия","Швейцария","Лихтенштейн","Австрия",
-                            "Словакия","Молдавия","Венгрия","Румыния","Болгария","Словения","Хорватия",
-                            "Сербия","Босния и Герцеговина","Черногория","Республика Косово",
-                            "Северная Македония","Албания","Греция","Италия","Монако","Сан-Марино",
-                            "Ватикан","Мальта"};
-
-    public String capital[]={"Москва","Хельсинки","Стокгольм","Осло","Лондон","Рейкьявик","Дублин",
-                                "Лиссабон","Мадрид","Андорра-ла-Велья","Париж","Таллин","Рига",
-                                "Вильнюс","Копенгаген","Брюссель","Амстердам","Люксембург","Минск",
-                                "Берлин","Варшава","Киев","Прага","Берн (де-факто)","Вадуц","Вена",
-                                "Братислава","Кишинёв","Будапешт","Бухарест","София","Любляна",
-                                "Загреб","Белград","Сараево","Подгорица","Приштина","Скопье","Тирана",
-                                "Афины","Рим","Монако","Сан-Марино","Ватикан","Валлетта"};
-
-    public String president[]={"Владимир Путин","Саули Ниинистё", "Король - Карл XVI Густав",
-                                "Король - Харальд V", "Королева - Елизавета II", "Гвюдни Йоуханнессон",
-                                "Майкл Хиггинс", "Марселу Ребелу ди Соза", "Король - Филипп VI",
-                                "Сокнязья - Эмманюэль Макрон, Жоан Энрик Вивес-и-Сисилиа","Эмманюэль Макрон",
-                                "Керсти Кальюлайд","Эгилс Левитс","Гитанас Науседа", "Королева - Маргрете II",
-                                "Король - Филипп","Король - Виллем-Александр","Великий герцог - Анри (Генрих)",
-                                "Александр Лукашенко","Франк-Вальтер Штайнмайер","Анджей Дуда",
-                                "Владимир Зеленский","Милош Земан","Симонетта Соммаруга",
-                                "Князь - Ханс-Адам II","Александр Ван дер Беллен","Зузана Чапутова",
-                                "Игорь Додон","Янош Адер","Клаус Йоханнис","Румен Радев","Борут Пахор",
-                                "Зоран Миланович","Александр Вучич","Валентин Инцко","Мило Джуканович",
-                                "Хашим Тачи","Стево Пендаровский","Илир Мета","Катерина Сакелларопулу",
-                                "Серджо Маттарелла","Князь - Альбер II",
-                                "Капитаны-регенты - Алессандро Карделли, Мирко Дольчини",
-                                "Папа Римский - Франциск","Джордж Велла"};
-
-    public String currency[]={"Российский рубль, ₽ - RUB","Евро, EUR","Шведская крона, SEK",
-                                "Норвежская крона, NOK","Фунт стерлингов, GBP","Исландская крона, ISK",
-                                "Евро, EUR", "Евро, EUR", "Евро, EUR", "Евро, EUR", "Евро, EUR",
-                                "Евро, EUR","Евро, EUR","Евро, EUR","Датская крона, DKK","Евро, EUR",
-                                "Евро, EUR","Евро, EUR","Белорусский рубль, Br","Евро, EUR",
-                                "Польский злотый, PLN","Гривна, ₴ — UAH","Чешская крона, CZK",
-                                "Швейцарский франк, CHF","Швейцарский франк, CHF","Евро, EUR",
-                                "Евро, EUR","Молдавский лей, MDL","Венгерский форинт, HUF",
-                                "Лей, RON","Болгарский лев, BGN","Евро, EUR","Хрватская куна, HRK",
-                                "Сербский динар,  RSD","Конвертируемая марка","Евро, EUR","Евро, EUR",
-                                "Македонский денар","Лек, ALB","Евро, EUR","Евро, EUR","Евро, EUR",
-                                "Евро, EUR","Евро, EUR","Евро, EUR"};
-
-    public String history[]={String.valueOf(R.string.history_Rus),String.valueOf(R.string.history_Fin),
-                            String.valueOf(R.string.history_Swed), String.valueOf(R.string.history_Norw),
-                            String.valueOf(R.string.history_UK),String.valueOf(R.string.history_Ice),
-                            String.valueOf(R.string.history_Irel),String.valueOf(R.string.history_Port),
-                            String.valueOf(R.string.history_Spain),String.valueOf(R.string.history_Andorra),
-                            String.valueOf(R.string.history_France),String.valueOf(R.string.history_Estonia),
-                            String.valueOf(R.string.history_Latvia),String.valueOf(R.string.history_Litvenia),
-                            String.valueOf(R.string.history_Denmark),String.valueOf(R.string.history_Belg),
-                            String.valueOf(R.string.history_Netherlands),String.valueOf(R.string.history_Lux),
-                            String.valueOf(R.string.history_Belarus),String.valueOf(R.string.history_Germany),
-                            String.valueOf(R.string.history_Poland),String.valueOf(R.string.history_Ukraine),
-                            String.valueOf(R.string.history_Czech),String.valueOf(R.string.history_Switz),
-                            String.valueOf(R.string.history_Liht),String.valueOf(R.string.history_Austria),
-                            String.valueOf(R.string.history_Slovakia),String.valueOf(R.string.history_Mold),
-                            String.valueOf(R.string.history_Hungary),String.valueOf(R.string.history_Romania),
-                            String.valueOf(R.string.history_Bulgaria),String.valueOf(R.string.history_Slovenia),
-                            String.valueOf(R.string.history_Croatia),String.valueOf(R.string.history_Serbia),
-                            String.valueOf(R.string.history_Bosnia),String.valueOf(R.string.history_Montenegro),
-                            String.valueOf(R.string.history_Kosovo),String.valueOf(R.string.history_Macedonia),
-                            String.valueOf(R.string.history_Albania),String.valueOf(R.string.history_Greece),
-                            String.valueOf(R.string.history_Italy),String.valueOf(R.string.history_Monaco),
-                            String.valueOf(R.string.history_San),String.valueOf(R.string.history_Vatican),
-                            String.valueOf(R.string.history_Malta)};
-
-    public String img[]={String.valueOf(R.drawable.rus_flag), String.valueOf(R.drawable.fin_flag),
-                        String.valueOf(R.drawable.swed_flag), String.valueOf(R.drawable.norw_flag),
-                        String.valueOf(R.drawable.uk_flag), String.valueOf(R.drawable.ice_flag),
-                        String.valueOf(R.drawable.irel_flag),String.valueOf(R.drawable.port_flag),
-                        String.valueOf(R.drawable.spain_flag),String.valueOf(R.drawable.andora_flag),
-                        String.valueOf(R.drawable.france_flag),String.valueOf(R.drawable.estonia_flag),
-                        String.valueOf(R.drawable.latvia_flag),String.valueOf(R.drawable.litvenia_flag),
-                        String.valueOf(R.drawable.denmark_flag),String.valueOf(R.drawable.belg_flag),
-                        String.valueOf(R.drawable.netherlands_flag),String.valueOf(R.drawable.lux_flag),
-                        String.valueOf(R.drawable.belarus_flag),String.valueOf(R.drawable.german_flag),
-                        String.valueOf(R.drawable.poland_flag),String.valueOf(R.drawable.ukr_flag),
-                        String.valueOf(R.drawable.czech_flag),String.valueOf(R.drawable.switz_flag),
-                        String.valueOf(R.drawable.lihten_flag),String.valueOf(R.drawable.austria_flag),
-                        String.valueOf(R.drawable.slovakia_flag),String.valueOf(R.drawable.mold_flag),
-                        String.valueOf(R.drawable.hungary_flag),String.valueOf(R.drawable.romania_flag),
-                        String.valueOf(R.drawable.bulgaria_flag),String.valueOf(R.drawable.slovenia_flag),
-                        String.valueOf(R.drawable.croatia_flag),String.valueOf(R.drawable.serbia_flag),
-                        String.valueOf(R.drawable.bosnia_flag),String.valueOf(R.drawable.montenegro_flag),
-                        String.valueOf(R.drawable.kosovo_flag),String.valueOf(R.drawable.macedonia_flag),
-                        String.valueOf(R.drawable.albania_flag),String.valueOf(R.drawable.greece_flag),
-                        String.valueOf(R.drawable.italy_flag),String.valueOf(R.drawable.monaco_flag),
-                        String.valueOf(R.drawable.san_flag),String.valueOf(R.drawable.vatican_flag),
-                        String.valueOf(R.drawable.malta_flag)};
-
-    private int idIndex;
-    private int nameIndex;
-    private int capitalIndex;
-    private int presidentIndex;
-    private int currencyIndex;
-    private int historyIndex;
-    private int imgIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -292,59 +189,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void dbinfo(SQLiteDatabase db){
-        db.execSQL("drop table if exists "+ DBHelper.TABLE_CONTACTS);
-        db.execSQL(DBHelper.CREATE_TABLE);
-        Cursor cur = db.rawQuery("SELECT COUNT(*) FROM "+ DBHelper.TABLE_CONTACTS, null);
+        db.execSQL("drop table if exists "+ Constants.TABLE);
+        db.execSQL(Constants.CREATE_TABLE);
+        Cursor cur = db.rawQuery("SELECT COUNT(*) FROM "+ Constants.TABLE, null);
         if (cur != null) {
             cur.moveToFirst();
             if (cur.getInt (0) == 0) {
-                for(int i=0; i<name.length; i++){
-                    contentValues.put(DBHelper.KEY_NAME, name[i]);
-                    contentValues.put(DBHelper.KEY_CAPITAL, capital[i]);
-                    contentValues.put(DBHelper.KEY_PRESIDENT, president[i]);
-                    contentValues.put(DBHelper.KEY_CURRENCY, currency[i]);
-                    contentValues.put(DBHelper.KEY_HISTORY, history[i]);
-                    contentValues.put(DBHelper.KEY_IMAGE, img[i]);
-                    db.insert(DBHelper.TABLE_CONTACTS, null, contentValues);
-                }
+
             }
         }
 
-        if((name.length!=cur.getInt (0)) || (capital.length!=cur.getInt (0))
-            || (president.length!=cur.getInt (0)) || (currency.length!=cur.getInt (0))
-            || (history.length!=cur.getInt (0)) || (img.length!=cur.getInt (0)) ) {
-            Log.d("mLog","if: "+name.length);
-            Log.d("mLog","if: "+cur.getInt (0));
-            db.execSQL("drop table if exists "+ DBHelper.TABLE_CONTACTS);
-            db.execSQL(DBHelper.CREATE_TABLE);
-            for(int i=0; i<name.length; i++){
-                contentValues.put(DBHelper.KEY_NAME, name[i]);
-                contentValues.put(DBHelper.KEY_CAPITAL, capital[i]);
-                contentValues.put(DBHelper.KEY_PRESIDENT, president[i]);
-                contentValues.put(DBHelper.KEY_CURRENCY, currency[i]);
-                contentValues.put(DBHelper.KEY_HISTORY, history[i]);
-                contentValues.put(DBHelper.KEY_IMAGE, img[i]);
-                db.insert(DBHelper.TABLE_CONTACTS, null, contentValues);
-            }
+        if((cur.getCount()!=cur.getInt (0))  ) {
+            db.execSQL("drop table if exists "+ Constants.TABLE);
+            db.execSQL(Constants.CREATE_TABLE);
+            String query_insert=Constants.INSERT_INTO+Constants.INSERT_VALUES;
+            db.execSQL(query_insert);
         }
         cur.close();
-        Cursor cursor = db.query(DBHelper.TABLE_CONTACTS, null, null, null, null, null, null);
+        Cursor cursor = db.query(Constants.TABLE, null, null, null, null, null, null);
         if (cursor.moveToFirst()) {
-            idIndex = cursor.getColumnIndex(DBHelper.KEY_ID);
-            nameIndex = cursor.getColumnIndex(DBHelper.KEY_NAME);
-            capitalIndex = cursor.getColumnIndex(DBHelper.KEY_CAPITAL);
-            presidentIndex = cursor.getColumnIndex(DBHelper.KEY_PRESIDENT);
-            currencyIndex = cursor.getColumnIndex(DBHelper.KEY_CURRENCY);
-            historyIndex = cursor.getColumnIndex(DBHelper.KEY_HISTORY);
-            imgIndex = cursor.getColumnIndex(DBHelper.KEY_IMAGE);
+            Constants.idIndex = cursor.getColumnIndex(Constants.KEY_ID);
+            Constants.nameIndex = cursor.getColumnIndex(Constants.KEY_NAME);
+            Constants.capitalIndex = cursor.getColumnIndex(Constants.KEY_CAPITAL);
+            Constants.presidentIndex = cursor.getColumnIndex(Constants.KEY_PRESIDENT);
+            Constants.currencyIndex = cursor.getColumnIndex(Constants.KEY_CURRENCY);
+            Constants.historyIndex = cursor.getColumnIndex(Constants.KEY_HISTORY);
+            Constants.imgIndex = cursor.getColumnIndex(Constants.KEY_IMAGE);
             do {
-                Log.d("mLog", "ID = " + cursor.getInt(idIndex) +
-                        ", name = " + cursor.getString(nameIndex) +
-                        ", capital = " + cursor.getString(capitalIndex)+
-                        ", president = " + cursor.getString(presidentIndex)+
-                        ", currency = " + cursor.getString(currencyIndex)+
-                        ", history = " + cursor.getString(historyIndex)+
-                        ", img = " + cursor.getString(imgIndex));
+                Log.d("mLog", "ID = " + cursor.getInt(Constants.idIndex) +
+                        ", name = " + cursor.getString(Constants.nameIndex) +
+                        ", capital = " + cursor.getString(Constants.capitalIndex)+
+                        ", president = " + cursor.getString(Constants.presidentIndex)+
+                        ", currency = " + cursor.getString(Constants.currencyIndex)+
+                        ", history = " + cursor.getString(Constants.historyIndex)+
+                        ", img = " + cursor.getString(Constants.imgIndex));
             } while (cursor.moveToNext());
         } else
             Log.d("mLog","0 rows");
