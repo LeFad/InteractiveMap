@@ -9,6 +9,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.valeria.interactivemap.DB.Constants;
+import com.valeria.interactivemap.DB.DBHelper;
+
 public class Information extends AppCompatActivity
 {
     private TextView tv_capital, tv_country, tv_president, tv_money, tv_history;
@@ -47,7 +50,7 @@ public class Information extends AppCompatActivity
     }
 
     public void setView(SQLiteDatabase db, String id){
-        Cursor cursor=db.rawQuery("SELECT * FROM "+Constants.TABLE+" WHERE "+ Constants.KEY_ID +"="+id+";", null);
+        Cursor cursor=db.rawQuery("SELECT * FROM "+ Constants.TABLE+" WHERE "+ Constants.KEY_ID +"="+id+";", null);
         if (cursor.moveToFirst()) {
             Constants.idIndex = cursor.getColumnIndex(Constants.KEY_ID);
             Constants.nameIndex = cursor.getColumnIndex(Constants.KEY_NAME);

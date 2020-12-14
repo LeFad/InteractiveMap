@@ -1,7 +1,17 @@
-package com.valeria.interactivemap;
+package com.valeria.interactivemap.DB;
+
+import com.valeria.interactivemap.R;
 
 public class Constants
 {
+    public static int idIndex;
+    public static int nameIndex;
+    public static int capitalIndex;
+    public static int presidentIndex;
+    public static int currencyIndex;
+    public static int historyIndex;
+    public static int imgIndex;
+
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "CountriesDB";
     public static final String TABLE = "Countries";
@@ -20,7 +30,7 @@ public class Constants
             +", "+KEY_HISTORY+", "+KEY_IMAGE+") values ";
 
     public static final String INSERT_VALUES=
-            "('Россия','Москва','Владимир Путин','Российский рубль, ₽ - RUB',"+R.string.history_Rus+","+R.drawable.rus_flag+"),"+
+            "('Россия','Москва','Владимир Путин','Российский рубль, ₽ - RUB',"+ R.string.history_Rus+","+R.drawable.rus_flag+"),"+
                     "('Финляндия','Хельсинки','Саули Ниинистё','Евро, EUR',"+R.string.history_Fin+","+R.drawable.fin_flag+"),"+
                     "('Швеция','Стокгольм','Король - Карл XVI Густав','Шведская крона, SEK',"+R.string.history_Swed+","+R.drawable.swed_flag+"),"+
                     "('Норвегия','Осло','Король - Харальд V','Норвежская крона, NOK',"+R.string.history_Norw+","+R.drawable.norw_flag+"),"+
@@ -67,13 +77,5 @@ public class Constants
                     "('Мальта','Валлетта','Джордж Велла','Евро, EUR',"+R.string.history_Malta+","+R.drawable.malta_flag+")";
 
 
-
-   public static int idIndex;
-   public static int nameIndex;
-   public static int capitalIndex;
-   public static int presidentIndex;
-   public static int currencyIndex;
-   public static int historyIndex;
-   public static int imgIndex;
 
 }

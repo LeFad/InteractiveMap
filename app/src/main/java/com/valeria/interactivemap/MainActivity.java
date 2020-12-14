@@ -2,7 +2,7 @@ package com.valeria.interactivemap;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import android.content.ContentValues;
+
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -11,6 +11,9 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+
+import com.valeria.interactivemap.DB.Constants;
+import com.valeria.interactivemap.DB.DBHelper;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener
 {
@@ -27,7 +30,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             btn_Italy2, btn_Italy3, btn_Monaco, btn_San, btn_Vatican, btn_Malta;
     ConstraintLayout constraintLayout;
 
-    public ContentValues contentValues = new ContentValues();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)

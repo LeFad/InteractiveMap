@@ -1,4 +1,4 @@
-package com.valeria.interactivemap;
+package com.valeria.interactivemap.DB;
 
 
 import android.content.Context;
