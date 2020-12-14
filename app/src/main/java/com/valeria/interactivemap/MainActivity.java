@@ -235,8 +235,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view)
     {
-        Information information = new Information();
-        Intent intent;
+        Intent intent = new Intent(this, Information.class);;
         String str_name;
         switch (view.getId()){
             case R.id.btn_Rus1:
@@ -244,16 +243,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Rus3:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "1";
+                str_name = "Россия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Fin:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "2";
+                str_name = "Финляндия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -261,8 +258,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Swed2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "3";
+                str_name = "Швеция";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -271,40 +267,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Norw3:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "4";
+                str_name = "Норвегия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_UK:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "5";
+                str_name = "Великобритания";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Ice:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "6";
+                str_name = "Исландия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Irel:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "7";
+                str_name = "Ирландия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Port:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "8";
+                str_name = "Португалия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -312,16 +303,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Spain2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "9";
+                str_name = "Испания";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Andora:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "10";
+                str_name = "Андорра";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -329,8 +318,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_France2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "11";
+                str_name = "Франция";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -338,15 +326,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
                 intent = new Intent(this, Information.class);
-                str_name = "12";
+                str_name = "Эстония";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Latvia:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "13";
+                str_name = "Латвия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -354,48 +341,42 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Litvenia2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "14";
+                str_name = "Литва";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Denmark:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "15";
+                str_name = "Дания";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Belg:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "16";
+                str_name = "Бельгия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Netherlands:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "17";
+                str_name = "Нидерланды";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Lux:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "18";
+                str_name = "Люксембург";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Belarus:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "19";
+                str_name = "Белоруссия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -403,16 +384,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Germany2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "20";
+                str_name = "Германия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Poland:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "21";
+                str_name = "Польша";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -420,40 +399,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Ukr2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "22";
+                str_name = "Украина";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Czech:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "23";
+                str_name = "Чехия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Switz:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "24";
+                str_name = "Швейцария";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Lihten:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "25";
+                str_name = "Лихтенштейн";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Austria:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "26";
+                str_name = "Австрия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -461,8 +435,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Slovakia2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "27";
+                str_name = "Словакия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -470,8 +443,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Moldova2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "28";
+                str_name = "Молдавия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -479,16 +451,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Hungary2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "29";
+                str_name = "Венгрия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Romania:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "30";
+                str_name = "Румыния";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -496,16 +466,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Bulgaria2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "31";
+                str_name = "Болгария";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Slovenia:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "32";
+                str_name = "Словения";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -514,8 +482,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Croatia3:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "33";
+                str_name = "Хорватия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -523,8 +490,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Serbia2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "34";
+                str_name = "Сербия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -532,24 +498,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Bosnia2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "35";
+                str_name = "Босния и Герцеговина";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Montenegro:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "36";
+                str_name = "Черногория";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Kosovo:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "37";
+                str_name = "Республика Косово";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -557,16 +520,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Macedonia2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "38";
+                str_name = "Северная Македония";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Albania:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "39";
+                str_name = "Албания";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -574,8 +535,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Greece2:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "40";
+                str_name = "Греция";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
@@ -584,40 +544,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_Italy3:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "41";
+                str_name = "Италия";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Monaco:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "42";
+                str_name = "Монако";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_San:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "43";
+                str_name = "Сан-Марино";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Vatican:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "44";
+                str_name = "Ватикан";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;
             case R.id.btn_Malta:
                 dbHelper = new DBHelper(this);
                 dbHelper.getWritableDatabase();
-                intent = new Intent(this, Information.class);
-                str_name = "45";
+                str_name = "Мальта";
                 intent.putExtra("key",str_name);
                 startActivity(intent);
                 break;

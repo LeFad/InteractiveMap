@@ -48,7 +48,7 @@ public class ZoomLayout extends ConstraintLayout implements ScaleGestureDetector
 
 
     public void init(Context context) {
-        final ScaleGestureDetector scaleDetector = new ScaleGestureDetector(context, this);
+        final ScaleGestureDetector SGD = new ScaleGestureDetector(context, this);
         this.setOnTouchListener(new OnTouchListener() {
 
             @Override
@@ -79,7 +79,7 @@ public class ZoomLayout extends ConstraintLayout implements ScaleGestureDetector
                         prevDy = dy;
                         break;
                 }
-                scaleDetector.onTouchEvent(motionEvent);
+                SGD.onTouchEvent(motionEvent);
 
                 if ((mode == Mode.DRAG && scale >= MIN_ZOOM) || mode == Mode.ZOOM) {
                     getParent().requestDisallowInterceptTouchEvent(true);
