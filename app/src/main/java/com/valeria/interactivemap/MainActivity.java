@@ -191,13 +191,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void dbinfo(SQLiteDatabase db){
-        db.execSQL("drop table if exists "+ Constants.TABLE);
-        db.execSQL(Constants.CREATE_TABLE);
         Cursor cur = db.rawQuery("SELECT COUNT(*) FROM "+ Constants.TABLE, null);
         if (cur != null) {
             cur.moveToFirst();
             if (cur.getInt (0) == 0) {
-
+                String query_insert=Constants.INSERT_INTO+Constants.INSERT_VALUES;
+                db.execSQL(query_insert);
             }
         }
 

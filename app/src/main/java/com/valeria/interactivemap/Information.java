@@ -51,8 +51,7 @@ public class Information extends AppCompatActivity
     }
 
     public void setView(SQLiteDatabase db, String name){
-      //  Cursor cursor=db.rawQuery("SELECT * FROM "+ Constants.TABLE+" WHERE "+ Constants.KEY_ID +"="+id+";", null);
-        String [] selectSQL = {Constants.KEY_ID,Constants.KEY_NAME,Constants.KEY_CAPITAL,Constants.KEY_PRESIDENT,Constants.KEY_CURRENCY,Constants.KEY_HISTORY,Constants.KEY_IMAGE};
+        String[] selectSQL = {Constants.KEY_ID,Constants.KEY_NAME,Constants.KEY_CAPITAL,Constants.KEY_PRESIDENT,Constants.KEY_CURRENCY,Constants.KEY_HISTORY,Constants.KEY_IMAGE};
         Cursor cursor=db.query(Constants.TABLE, selectSQL, Constants.KEY_NAME+" like ?", new String[]{"%"+name+"%"},null,null,null, null);
         if (cursor.moveToFirst()) {
             Constants.idIndex = cursor.getColumnIndex(Constants.KEY_ID);
