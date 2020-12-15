@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:app="http://schemas.android.com/apk/res-auto">
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
@@ -6,5 +6,18 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+
+    <style name="Btn" parent="@android:style/Widget.Button"  >
+        <!-- Customize your theme here. -->
+        <item name ="layout_constraintBottom_toBottomOf">parent</item>
+        <item name ="layout_constraintEnd_toEndOf">parent</item>
+        <item name ="layout_constraintStart_toStartOf">parent</item>
+        <item name ="layout_constraintTop_toTopOf">parent</item>
+        <item name ="android:background">@drawable/btn_bg</item>
+
+    </style>
+
+
+
 
 </resources>

@@ -26,805 +26,536 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.231" />
 
         <Button
             android:id="@+id/btn_Rus2"
             android:layout_width="63dp"
             android:layout_height="29dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.466" />
 
         <Button
             android:id="@+id/btn_Rus3"
             android:layout_width="20dp"
             android:layout_height="10dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.614"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.472" />
 
         <Button
             android:id="@+id/btn_Fin"
             android:layout_width="31dp"
             android:layout_height="111dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.634"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.276" />
 
         <Button
             android:id="@+id/btn_Swed1"
             android:layout_width="36dp"
             android:layout_height="97dp"
-            android:background="@drawable/btn_bg"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.52"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.379" />
 
         <Button
             android:id="@+id/btn_Swed2"
             android:layout_width="33dp"
             android:layout_height="48dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.547"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.277" />
 
         <Button
             android:id="@+id/btn_Norw1"
             android:layout_width="46dp"
             android:layout_height="63dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.392"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.374" />
 
         <Button
             android:id="@+id/btn_Norw2"
             android:layout_width="14dp"
             android:layout_height="31dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.445"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.309" />
 
         <Button
             android:id="@+id/btn_Norw3"
             android:layout_width="45dp"
             android:layout_height="24dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.532"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.226" />
 
         <Button
             android:id="@+id/btn_UK"
             android:layout_width="54dp"
             android:layout_height="124dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.19"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.451" />
 
         <Button
             android:id="@+id/btn_Ice"
             android:layout_width="52dp"
             android:layout_height="40dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.044"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.268" />
 
         <Button
             android:id="@+id/btn_Irel"
             android:layout_width="37dp"
             android:layout_height="35dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.072"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.489" />
 
         <Button
             android:id="@+id/btn_Port"
             android:layout_width="23dp"
             android:layout_height="55dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.709" />
 
         <Button
             android:id="@+id/btn_Spain1"
             android:layout_width="74dp"
             android:layout_height="74dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.077"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.731" />
 
         <Button
             android:id="@+id/btn_Spain2"
             android:layout_width="32dp"
             android:layout_height="14dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.271"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.718" />
 
         <Button
             android:id="@+id/btn_Andora"
             android:layout_width="9dp"
             android:layout_height="8dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.248"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.672" />
 
         <Button
             android:id="@+id/btn_France1"
             android:layout_width="64dp"
             android:layout_height="67dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.236"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.617" />
 
         <Button
             android:id="@+id/btn_France2"
             android:layout_width="14dp"
             android:layout_height="19dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.408"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.684" />
 
         <Button
             android:id="@+id/btn_Estonia"
             android:layout_width="38dp"
             android:layout_height="18dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.662"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.402" />
 
         <Button
             android:id="@+id/btn_Latvia"
             android:layout_width="47dp"
             android:layout_height="18dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.662"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.428" />
 
         <Button
             android:id="@+id/btn_Litvenia1"
             android:layout_width="40dp"
             android:layout_height="14dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.649"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.454" />
 
         <Button
             android:id="@+id/btn_Litvenia2"
             android:layout_width="18dp"
             android:layout_height="6dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.661"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.469" />
 
         <Button
             android:id="@+id/btn_Denmark"
             android:layout_width="39dp"
             android:layout_height="33dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.419"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.464" />
 
         <Button
             android:id="@+id/btn_Belg"
             android:layout_width="18dp"
             android:layout_height="16dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.325"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.548" />
 
         <Button
             android:id="@+id/btn_Netherlands"
             android:layout_width="21dp"
             android:layout_height="27dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.346"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.517" />
 
         <Button
             android:id="@+id/btn_Lux"
             android:layout_width="6dp"
             android:layout_height="13dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.36"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.558" />
 
         <Button
             android:id="@+id/btn_Belarus"
             android:layout_width="38dp"
             android:layout_height="40dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.753"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.472" />
 
         <Button
             android:id="@+id/btn_Germany1"
             android:layout_width="48dp"
             android:layout_height="37dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.429"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.515" />
 
         <Button
             android:id="@+id/btn_Germany2"
             android:layout_width="33dp"
             android:layout_height="32dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.417"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.567" />
 
         <Button
             android:id="@+id/btn_Poland"
             android:layout_width="55dp"
             android:layout_height="44dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.609"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.512" />
 
         <Button
             android:id="@+id/btn_Ukr1"
             android:layout_width="61dp"
             android:layout_height="75dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.954"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.547" />
 
         <Button
             android:id="@+id/btn_Ukr2"
             android:layout_width="53dp"
             android:layout_height="32dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.776"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.535" />
 
         <Button
             android:id="@+id/btn_Czech"
             android:layout_width="36dp"
             android:layout_height="17dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.531"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.559" />
 
         <Button
             android:id="@+id/btn_Switz"
             android:layout_width="25dp"
             android:layout_height="15dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.378"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.608" />
 
         <Button
             android:id="@+id/btn_Lihten"
             android:layout_width="5dp"
             android:layout_height="8dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.423"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.602" />
 
         <Button
             android:id="@+id/btn_Austria"
             android:layout_width="36dp"
             android:layout_height="19dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.512"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.593" />
 
         <Button
             android:id="@+id/btn_Slovakia1"
             android:layout_width="32dp"
             android:layout_height="11dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.633"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.563" />
 
         <Button
             android:id="@+id/btn_Slovakia2"
             android:layout_width="14dp"
             android:layout_height="9dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.581"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.577" />
 
         <Button
             android:id="@+id/btn_Moldova1"
             android:layout_width="9dp"
             android:layout_height="11dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.771"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.567" />
 
         <Button
             android:id="@+id/btn_Moldova2"
             android:layout_width="8dp"
             android:layout_height="15dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.791"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.579" />
 
         <Button
             android:id="@+id/btn_Hungary1"
             android:layout_width="37dp"
             android:layout_height="14dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.609"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.599" />
 
         <Button
             android:id="@+id/btn_Hungary2"
             android:layout_width="18dp"
             android:layout_height="10dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.644"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.581" />
 
         <Button
             android:id="@+id/btn_Romania"
             android:layout_width="49dp"
             android:layout_height="35dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.745"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.607" />
 
         <Button
             android:id="@+id/btn_Bulgaria1"
             android:layout_width="21dp"
             android:layout_height="21dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.743"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.658" />
 
         <Button
             android:id="@+id/btn_Bulgaria2"
             android:layout_width="30dp"
             android:layout_height="23dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.816"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.648" />
 
         <Button
             android:id="@+id/btn_Slovenia"
             android:layout_width="18dp"
             android:layout_height="10dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.519"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.621" />
 
         <Button
             android:id="@+id/btn_Croatia1"
             android:layout_width="25dp"
             android:layout_height="8dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.575"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.622" />
 
         <Button
             android:id="@+id/btn_Croatia2"
             android:layout_width="9dp"
             android:layout_height="23dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.539"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.648" />
 
         <Button
             android:id="@+id/btn_Croatia3"
             android:layout_width="7dp"
             android:layout_height="9dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.559"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.655" />
 
         <Button
             android:id="@+id/btn_Serbia1"
             android:layout_width="10dp"
             android:layout_height="27dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.635"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.638" />
 
         <Button
             android:id="@+id/btn_Serbia2"
             android:layout_width="15dp"
             android:layout_height="16dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.669"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.644" />
 
         <Button
             android:id="@+id/btn_Bosnia1"
             android:layout_width="25dp"
             android:layout_height="10dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.59"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.639" />
 
         <Button
             android:id="@+id/btn_Bosnia2"
             android:layout_width="13dp"
             android:layout_height="9dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.603"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.652" />
 
         <Button
             android:id="@+id/btn_Montenegro"
             android:layout_width="8dp"
             android:layout_height="8dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.627"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.664" />
 
         <Button
             android:id="@+id/btn_Kosovo"
             android:layout_width="11dp"
             android:layout_height="7dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.662"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.663" />
 
         <Button
             android:id="@+id/btn_Macedonia1"
             android:layout_width="14dp"
             android:layout_height="6dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.691"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.674" />
 
         <Button
             android:id="@+id/btn_Macedonia2"
             android:layout_width="9dp"
             android:layout_height="6dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.676"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.682" />
 
         <Button
             android:id="@+id/btn_Albania"
             android:layout_width="9dp"
             android:layout_height="25dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.649"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.693" />
 
         <Button
             android:id="@+id/btn_Greece1"
             android:layout_width="77dp"
             android:layout_height="62dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.828"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.758" />
 
         <Button
             android:id="@+id/btn_Greece2"
             android:layout_width="42dp"
             android:layout_height="11dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.794"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.688" />
 
         <Button
             android:id="@+id/btn_Italy1"
             android:layout_width="98dp"
             android:layout_height="52dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.504"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.748" />
 
         <Button
             android:id="@+id/btn_Italy2"
             android:layout_width="33dp"
             android:layout_height="13dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.486"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.672" />
 
         <Button
             android:id="@+id/btn_Italy3"
             android:layout_width="38dp"
             android:layout_height="19dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.434"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.634" />
 
         <Button
             android:id="@+id/btn_Monaco"
             android:layout_width="16dp"
             android:layout_height="11dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.387"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.657" />
 
         <Button
             android:id="@+id/btn_San"
             android:layout_width="28dp"
             android:layout_height="6dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.459"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.652" />
 
         <Button
             android:id="@+id/btn_Vatican"
             android:layout_width="29dp"
             android:layout_height="7dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.509"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.688" />
 
         <Button
             android:id="@+id/btn_Malta"
             android:layout_width="29dp"
             android:layout_height="7dp"
-            android:background="@drawable/btn_bg"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/Btn"
             app:layout_constraintHorizontal_bias="0.552"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.777" />
 
 
